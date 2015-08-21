@@ -39,11 +39,11 @@ For a more detailed description on each of the operationsm pleas read the [READM
  - Variables present in the dataset
 
         	                            vars   n  mean   sd median trimmed   mad   min   max range  skew kurtosis   se
-	X.Subject.                              1 180 15.50 8.68  15.50   15.50 11.12  1.00 30.00 29.00  0.00    -1.22 0.65
-X.Activity.*                            2 180   NaN   NA     NA     NaN    NA   Inf  -Inf  -Inf    NA       NA   NA
-X.tBodyAccMeanX.                        3 180  0.27 0.01   0.28    0.28  0.01  0.22  0.30  0.08 -1.05     2.27 0.00
-X.tBodyAccMeanY.                        4 180 -0.02 0.01  -0.02   -0.02  0.00 -0.04  0.00  0.04 -0.53     1.56 0.00
-X.tBodyAccMeanZ.                        5 180 -0.11 0.01  -0.11   -0.11  0.01 -0.15 -0.08  0.08 -1.11     4.82 0.00
+		X.Subject.                              1 180 15.50 8.68  15.50   15.50 11.12  1.00 30.00 29.00  0.00    -1.22 0.65
+		X.Activity.*                            2 180   NaN   NA     NA     NaN    NA   Inf  -Inf  -Inf    NA       NA   NA
+		X.tBodyAccMeanX.                        3 180  0.27 0.01   0.28    0.28  0.01  0.22  0.30  0.08 -1.05     2.27 0.00
+		X.tBodyAccMeanY.                        4 180 -0.02 0.01  -0.02   -0.02  0.00 -0.04  0.00  0.04 -0.53     1.56 0.00
+		X.tBodyAccMeanZ.                        5 180 -0.11 0.01  -0.11   -0.11  0.01 -0.15 -0.08  0.08 -1.11     4.82 0.00
 X.tBodyAccStdX.                         6 180 -0.56 0.45  -0.75   -0.60  0.36 -1.00  0.63  1.62  0.43    -1.24 0.03
 X.tBodyAccStdY.                         7 180 -0.46 0.50  -0.51   -0.49  0.65 -0.99  0.62  1.61  0.23    -1.60 0.04
 X.tBodyAccStdZ.                         8 180 -0.58 0.40  -0.65   -0.61  0.47 -0.99  0.61  1.60  0.45    -1.05 0.03
