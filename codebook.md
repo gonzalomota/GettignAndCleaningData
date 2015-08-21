@@ -42,7 +42,7 @@ For a more detailed description on each of the operationsm pleas read the [READM
  
 										vars   n  mean   sd median trimmed   mad   min   max range  skew kurtosis   se
 		Subject                          1 180 15.50 8.68  15.50   15.50 11.12  1.00 30.00 29.00  0.00    -1.22 0.65
-		Activity                              2 180   NaN   NA     NA     NaN    NA   Inf  -Inf  -Inf    NA       NA   NA
+		Activity                         2 180   NaN   NA     NA     NaN    NA   Inf  -Inf  -Inf    NA       NA   NA
 		tBodyAccMeanX                    3 180  0.27 0.01   0.28    0.28  0.01  0.22  0.30  0.08 -1.05     2.27 0.00
 		tBodyAccMeanY                    4 180 -0.02 0.01  -0.02   -0.02  0.00 -0.04  0.00  0.04 -0.53     1.56 0.00
 		tBodyAccMeanZ                    5 180 -0.11 0.01  -0.11   -0.11  0.01 -0.15 -0.08  0.08 -1.11     4.82 0.00
