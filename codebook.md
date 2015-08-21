@@ -12,9 +12,13 @@ Data was collected from 30 subjects performing activities of daily living (ADL) 
 
 ###Notes on the original (raw) data 
 The dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
+
 The data is therefore divided in two types of files, training and test, containing the same type of data for different subjects.
+
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 ##Creating the tidy datafile
@@ -34,7 +38,8 @@ The script does the following in this order:
     2. Extracts only the measurements on the mean and standard deviation for each measurement. 
     3. Uses descriptive activity names to name the activities in the data set
     4. Appropriately labels the data set with descriptive variable names. 
-    5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+    5. From the data set in step 4, creates a second, independent tidy data set with the average 
+    of each variable for each activity and each subject.
 
 For a more detailed description on each of the operationsm pleas read the [README](./README.md) file.
 
@@ -142,265 +147,351 @@ Index that indicates the subject number
 
 ###Activity
 Activity that was measured, by type:
-1. WALKING
-2. WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
-4. SITTING
-5. STANDING
-6. LAYING
+
+    1. WALKING
+    2. WALKING_UPSTAIRS
+    3. WALKING_DOWNSTAIRS
+    4. SITTING
+    5. STANDING
+    6. LAYING
+
 ###tBodyAccMeanX
 - Domain: time
 - Mean of the body acceleration signal on the X axis.
+
 ###tBodyAccMeanY
 - Domain: time
 - Mean of the body acceleration signal on the Y axis.
+
 ###tBodyAccMeanZ
 - Domain: time
 - Mean of the body acceleration signal on the Z axis.
+
 ###tBodyAccStdX
 - Domain: time
 - Standard deviation of the body acceleration signal on the X axis.
+
 ###tBodyAccStdY
 - Domain: time
 - Standard deviation of the body acceleration signal on the Y axis.
+
 ###tBodyAccStdZ
 - Domain: time
 - Standard deviation of the body acceleration signal on the Z axis.
+
 ###tGravityAccMeanX
 - Domain: time
 - Mean of the gravity acceleration signal on the X axis.
+
 ###tGravityAccMeanY
 - Domain: time
 - Mean of the gravity acceleration signal on the Y axis.
+
 ###tGravityAccMeanZ
 - Domain: time
 - Mean of the gravity acceleration signal on the Z axis.
+
 ###tGravityAccStdX
 - Domain: time
 - Standard deviation of the gravity acceleration signal on the X axis.
+
 ###tGravityAccStdY
 - Domain: time
 - Standard deviation of the gravity acceleration signal on the Y axis.
+
 ###tGravityAccStdZ
 - Domain: time
 - Standard deviation of the gravity acceleration signal on the Z axis.
+
 ###tBodyAccJerkMeanX
 - Domain: time
 - Mean of the Jerk signal of the body acceleration signal on the X axis.
+
 ###tBodyAccJerkMeanY
 - Domain: time
 - Mean of the Jerk signal of the body acceleration signal on the Y axis.
+
 ###tBodyAccJerkMeanZ
 - Domain: time
 - Mean of the Jerk signal of the body acceleration signal on the Z axis.
+
 ###tBodyAccJerkStdX
 - Domain: time
 - Standard deviation of the Jerk signal of the gravity acceleration signal on the X axis.
+
 ###tBodyAccJerkStdY
 - Domain: time
 - Standard deviation of the Jerk signal of the gravity acceleration signal on the Y axis.
+
 ###tBodyAccJerkStdZ
 - Domain: time
 - Standard deviation of the Jerk signal of the gravity acceleration signal on the Z axis.
+
 ###tBodyGyroMeanX
 - Domain: time
 - Mean of the body's gyroscope on the X axis.
+
 ###tBodyGyroMeanY
 - Domain: time
 - Mean of the body's gyroscope on the Y axis.
+
 ###tBodyGyroMeanZ
 - Domain: time
 - Mean of the body's gyroscope on the Z axis.
+
 ###tBodyGyroStdX
 - Domain: time
 - Standard deviation of the body's gyroscope on the X axis.
+
 ###tBodyGyroStdY
 - Domain: time
 - Standard deviation of the body's gyroscope on the Y axis.
+
 ###tBodyGyroStdZ
 - Domain: time
 - Standard deviation of the body's gyroscope on the Z axis.
+
 ###tBodyGyroJerkMeanX
 - Domain: time
 - Mean of the Jerk signal of the body's gyroscope on the X axis.
+
 ###tBodyGyroJerkMeanY
 - Domain: time
 - Mean of the Jerk signal of the body's gyroscope on the Y axis.
+
 ###tBodyGyroJerkMeanZ
 - Domain: time
 - Mean of the Jerk signal of the body's gyroscope on the Z axis.
+
 ###tBodyGyroJerkStdX
 - Domain: time
 - Standard deviation of the Jerk signal of the body's gyroscope on the X axis.
+
 ###tBodyGyroJerkStdY
 - Domain: time
 - Standard deviation of the Jerk signal of the body's gyroscope on the Y axis.
+
 ###tBodyGyroJerkStdZ
 - Domain: time
 - Standard deviation of the Jerk signal of the body's gyroscope on the Z axis.
+
 ###tBodyAccMagMean
 - Domain: time
 - Mean of the magnitude of the body acceleration signal.
+
 ###tBodyAccMagStd
 - Domain: time
 - Standard deviation of the magnitude of the body acceleration signal.
+
 ###tGravityAccMagMean
 - Domain: time
 - Mean of the magnitude of the gravity acceleration signal.
+
 ###tGravityAccMagStd
 - Domain: time
 - Standard deviation of the magnitude of the gravity acceleration signal.
+
 ###tBodyAccJerkMagMean
 - Domain: time
 - Mean of the magnitude of the Jerk signal of the body acceleration signal.
+
 ###tBodyAccJerkMagStd
 - Domain: time
 - Standard deviation of the magnitude of the Jerk signal of the body acceleration signal.
+
 ###tBodyGyroMagMean
 - Domain: time
 - Mean of the magnitude of the body's gyroscope.
+
 ###tBodyGyroMagStd
 - Domain: time
 - Standard deviation of the magnitude of the body's gyroscope.
+
 ###tBodyGyroJerkMagMean
 - Domain: time
 - Mean of the magnitude of the Jerk signal of the body's gyroscope.
+
 ###tBodyGyroJerkMagStd
 - Domain: time
 - Standard deviation of the magnitude of the Jerk signal of the body's gyroscope.
+
 ###fBodyAccMeanX
 - Domain: frequency
 - Mean of the body acceleration signal on the X axis.
+
 ###fBodyAccMeanY
 - Domain: frequency
 - Mean of the body acceleration signal on the Y axis.
+
 ###fBodyAccMeanZ
 - Domain: frequency
 - Mean of the body acceleration signal on the Z axis.
+
 ###fBodyAccStdX
 - Domain: frequency
 - Standard deviation of the body acceleration signal on the X axis.
+
 ###fBodyAccStdY
 - Domain: frequency
 - Standard deviation of the body acceleration signal on the Y axis.
+
 ###fBodyAccStdZ
 - Domain: frequency
 - Standard deviation of the body acceleration signal on the Z axis.
+
 ###fBodyAccMeanFreqX
 - Domain: frequency
 - Weighted average (mean frequency) of the body acceleration signal on the X axis.
+
 ###fBodyAccMeanFreqY
 - Domain: frequency
 - Weighted average (mean frequency) of the body acceleration signal on the Y axis.
+
 ###fBodyAccMeanFreqZ
 - Domain: frequency
 - Weighted average (mean frequency) of the body acceleration signal on the Z axis.
+
 ###fBodyAccJerkMeanX
 - Domain: frequency
 - Mean of the Jerk signal of the body acceleration signal on the X axis.
+
 ###fBodyAccJerkMeanY
 - Domain: frequency
 - Mean of the Jerk signal of the body acceleration signal on the Y axis.
+
 ###fBodyAccJerkMeanZ
 - Domain: frequency
 - Mean of the Jerk signal of the body acceleration signal on the Z axis.
+
 ###fBodyAccJerkStdX
 - Domain: frequency
 - Standard deviation of the Jerk signal of the body acceleration signal on the X axis.
+
 ###fBodyAccJerkStdY
 - Domain: frequency
 - Standard deviation of the Jerk signal of the body acceleration signal on the Y axis.
+
 ###fBodyAccJerkStdZ
 - Domain: frequency
 - Standard deviation of the Jerk signal of the body acceleration signal on the Z axis.
+
 ###fBodyAccJerkMeanFreqX
 - Domain: frequency
 - Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the X axis.
+
 ###fBodyAccJerkMeanFreqY
 - Domain: frequency
 - Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the Y axis.
+
 ###fBodyAccJerkMeanFreqZ
 - Domain: frequency
 - Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the Z axis.
+
 ###fBodyGyroMeanX
 - Domain: frequency
 - Mean of the body's gyroscope on the X axis.
+
 ###fBodyGyroMeanY
 - Domain: frequency
 - Mean of the body's gyroscope on the Y axis.
+
 ###fBodyGyroMeanZ
 - Domain: frequency
 - Mean of the body's gyroscope on the Z axis.
+
 ###fBodyGyroStdX
 - Domain: frequency
 - Standard deviation of the body's gyroscope on the X axis.
+
 ###fBodyGyroStdY
 - Domain: frequency
 - Standard deviation of the body's gyroscope on the Y axis.
+
 ###fBodyGyroStdZ
 - Domain: frequency
 - Standard deviation of the body's gyroscope on the Z axis.
+
 ###fBodyGyroMeanFreqX
 - Domain: frequency
 - Weighted average (mean frequency) of the body's gyroscope on the X axis.
+
 ###fBodyGyroMeanFreqY
 - Domain: frequency
 - Weighted average (mean frequency) of the body's gyroscope on the Y axis.
+
 ###fBodyGyroMeanFreqZ
 - Domain: frequency
 - Weighted average (mean frequency) of the body's gyroscope on the Z axis.
+
 ###fBodyAccMagMean
 - Domain: frequency
 - Mean of the magnitude of the body acceleration signal.
+
 ###fBodyAccMagStd
 - Domain: frequency
 - Standard deviation of the magnitude of the body acceleration signal.
+
 ###fBodyAccMagMeanFreq
 - Domain: frequency
 - Weighted average (mean frequency) of the magnitude of the body acceleration signal.
+
 ###fBodyAccJerkMagMean
 - Domain: frequency
 - Mean of the magnitude of the Jerk signal of the body acceleration signal.
+
 ###fBodyAccJerkMagStd
 - Domain: frequency
 - Standard deviation of the magnitude of the Jerk signal of the body acceleration signal.
+
 ###fBodyAccJerkMagMeanFreq
 - Domain: frequency
 - Weighted average (mean frequency) of the magnitude of the Jerk signal of the body acceleration signal.
+
 ###fBodyGyroMagMean
 - Domain: frequency
 - Mean of the magnitude of the body's gyroscope.
+
 ###fBodyGyroMagStd
 - Domain: frequency
 - Standard deviation of the magnitude of the body's gyroscope.
+
 ###fBodyGyroMagMeanFreq
 - Domain: frequency
 - Weighted average (mean frequency) of the magnitude of the body's gyroscope.
+
 ###fBodyGyroJerkMagMean
 - Domain: frequency
 - Mean of the magnitude of the Jerk signal of the body's gyroscope.
+
 ###fBodyGyroJerkMagStd
 - Domain: frequency
 - Standard deviation of the magnitude of the Jerk signal of the body's gyroscope.
+
 ###fBodyGyroJerkMagMeanFreq
 - Domain: frequency
 - Weighted average (mean frequency) of the magnitude of the Jerk signal of the body's gyroscope.
+
 ###tBodyAccMeanGravityAngle
 - Domain: time
 - Mean of the angle between body acceleration and gravity acceleration.
+
 ###tBodyAccJerkGravityMeanAngle
 - Domain: time
 - Mean of the angle between the Jerk of the body acceleration and gravity acceleration.
+
 ###tBodyGyroGravityMeanAngle
 - Domain: time
 - Mean of the angle between body's gyroscope and gravity acceleration.
+
 ###tBodyGyroJerkGravityMeanAngle
 - Domain: time
 - Mean of the angle between the Jerk of the body's gyroscope and gravity acceleration.
+
 ###gravityMeanAngleX
 - Mean of the angle of gravity on the X axis.
+
 ###gravityMeanAngleY
 - Mean of the angle of gravity on the Y axis.
+
 ###gravityMeanAngleZ
 - Mean of the angle of gravity on the Z axis.
-
