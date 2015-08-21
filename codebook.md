@@ -48,6 +48,7 @@ For a more detailed description on each of the operationsm pleas read the [READM
  - Variables present in the dataset
  
 **All of the variables are the mean of the values for each activity and subject**
+**All of the variables are normalized, with values between -1 and 1 (except subject and activity)**
 
 
  
