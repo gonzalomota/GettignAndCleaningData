@@ -6,6 +6,8 @@ The following libraries must be installed for this script to run:
  - dplyr
  - tidyr
 
+Data in the working folder must be in the same structure as it is when extracted.
+
 ##How to run
   
   1. Copy the file to the directory where the data will be ("<path>/UCI HAR Dataset/")
