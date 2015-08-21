@@ -41,6 +41,8 @@ For a more detailed description on each of the operationsm pleas read the [READM
 ##Description of the variables in the tiny_data.txt file
  - Dimensions of the dataset: 180 observations of 88 variables
  - Variables present in the dataset
+ 
+**All of the variables are the mean of the values for each activity and subject**
 
 
  
@@ -126,7 +128,7 @@ For a more detailed description on each of the operationsm pleas read the [READM
 		fBodyGyroJerkMagMean            79 180 -0.76 0.26  -0.88   -0.79  0.17 -1.00  0.15  1.14  0.02
 		fBodyGyroJerkMagStd             80 180 -0.77 0.25  -0.89   -0.81  0.15 -1.00  0.29  1.29  0.02
 		fBodyGyroJerkMagMeanFreq        81 180  0.13 0.11   0.11    0.13  0.12 -0.18  0.43  0.61  0.01
-		TBodyAccMeanGravityAngle        82 180  0.01 0.04   0.01    0.01  0.03 -0.16  0.13  0.29  0.00
+		tBodyAccMeanGravityAngle        82 180  0.01 0.04   0.01    0.01  0.03 -0.16  0.13  0.29  0.00
 		tBodyAccJerkGravityMeanAngle    83 180  0.00 0.04   0.00    0.00  0.03 -0.12  0.20  0.32  0.00
 		tBodyGyroGravityMeanAngle       84 180  0.02 0.14   0.02    0.02  0.06 -0.39  0.44  0.83  0.01
 		tBodyGyroJerkGravityMeanAngle   85 180 -0.01 0.07  -0.02   -0.01  0.07 -0.22  0.18  0.41  0.01
@@ -135,25 +137,270 @@ For a more detailed description on each of the operationsm pleas read the [READM
 		gravityMeanAngleZ               88 180 -0.04 0.23   0.01   -0.01  0.14 -0.87  0.39  1.26  0.02
 
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+###Subject
+Index that indicates the subject number
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+###Activity
+Activity that was measured, by type:
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
+###tBodyAccMeanX
+- Domain: time
+- Mean of the body acceleration signal on the X axis.
+###tBodyAccMeanY
+- Domain: time
+- Mean of the body acceleration signal on the Y axis.
+###tBodyAccMeanZ
+- Domain: time
+- Mean of the body acceleration signal on the Z axis.
+###tBodyAccStdX
+- Domain: time
+- Standard deviation of the body acceleration signal on the X axis.
+###tBodyAccStdY
+- Domain: time
+- Standard deviation of the body acceleration signal on the Y axis.
+###tBodyAccStdZ
+- Domain: time
+- Standard deviation of the body acceleration signal on the Z axis.
+###tGravityAccMeanX
+- Domain: time
+- Mean of the gravity acceleration signal on the X axis.
+###tGravityAccMeanY
+- Domain: time
+- Mean of the gravity acceleration signal on the Y axis.
+###tGravityAccMeanZ
+- Domain: time
+- Mean of the gravity acceleration signal on the Z axis.
+###tGravityAccStdX
+- Domain: time
+- Standard deviation of the gravity acceleration signal on the X axis.
+###tGravityAccStdY
+- Domain: time
+- Standard deviation of the gravity acceleration signal on the Y axis.
+###tGravityAccStdZ
+- Domain: time
+- Standard deviation of the gravity acceleration signal on the Z axis.
+###tBodyAccJerkMeanX
+- Domain: time
+- Mean of the Jerk signal of the body acceleration signal on the X axis.
+###tBodyAccJerkMeanY
+- Domain: time
+- Mean of the Jerk signal of the body acceleration signal on the Y axis.
+###tBodyAccJerkMeanZ
+- Domain: time
+- Mean of the Jerk signal of the body acceleration signal on the Z axis.
+###tBodyAccJerkStdX
+- Domain: time
+- Standard deviation of the Jerk signal of the gravity acceleration signal on the X axis.
+###tBodyAccJerkStdY
+- Domain: time
+- Standard deviation of the Jerk signal of the gravity acceleration signal on the Y axis.
+###tBodyAccJerkStdZ
+- Domain: time
+- Standard deviation of the Jerk signal of the gravity acceleration signal on the Z axis.
+###tBodyGyroMeanX
+- Domain: time
+- Mean of the body's gyroscope on the X axis.
+###tBodyGyroMeanY
+- Domain: time
+- Mean of the body's gyroscope on the Y axis.
+###tBodyGyroMeanZ
+- Domain: time
+- Mean of the body's gyroscope on the Z axis.
+###tBodyGyroStdX
+- Domain: time
+- Standard deviation of the body's gyroscope on the X axis.
+###tBodyGyroStdY
+- Domain: time
+- Standard deviation of the body's gyroscope on the Y axis.
+###tBodyGyroStdZ
+- Domain: time
+- Standard deviation of the body's gyroscope on the Z axis.
+###tBodyGyroJerkMeanX
+- Domain: time
+- Mean of the Jerk signal of the body's gyroscope on the X axis.
+###tBodyGyroJerkMeanY
+- Domain: time
+- Mean of the Jerk signal of the body's gyroscope on the Y axis.
+###tBodyGyroJerkMeanZ
+- Domain: time
+- Mean of the Jerk signal of the body's gyroscope on the Z axis.
+###tBodyGyroJerkStdX
+- Domain: time
+- Standard deviation of the Jerk signal of the body's gyroscope on the X axis.
+###tBodyGyroJerkStdY
+- Domain: time
+- Standard deviation of the Jerk signal of the body's gyroscope on the Y axis.
+###tBodyGyroJerkStdZ
+- Domain: time
+- Standard deviation of the Jerk signal of the body's gyroscope on the Z axis.
+###tBodyAccMagMean
+- Domain: time
+- Mean of the magnitude of the body acceleration signal.
+###tBodyAccMagStd
+- Domain: time
+- Standard deviation of the magnitude of the body acceleration signal.
+###tGravityAccMagMean
+- Domain: time
+- Mean of the magnitude of the gravity acceleration signal.
+###tGravityAccMagStd
+- Domain: time
+- Standard deviation of the magnitude of the gravity acceleration signal.
+###tBodyAccJerkMagMean
+- Domain: time
+- Mean of the magnitude of the Jerk signal of the body acceleration signal.
+###tBodyAccJerkMagStd
+- Domain: time
+- Standard deviation of the magnitude of the Jerk signal of the body acceleration signal.
+###tBodyGyroMagMean
+- Domain: time
+- Mean of the magnitude of the body's gyroscope.
+###tBodyGyroMagStd
+- Domain: time
+- Standard deviation of the magnitude of the body's gyroscope.
+###tBodyGyroJerkMagMean
+- Domain: time
+- Mean of the magnitude of the Jerk signal of the body's gyroscope.
+###tBodyGyroJerkMagStd
+- Domain: time
+- Standard deviation of the magnitude of the Jerk signal of the body's gyroscope.
+###fBodyAccMeanX
+- Domain: frequency
+- Mean of the body acceleration signal on the X axis.
+###fBodyAccMeanY
+- Domain: frequency
+- Mean of the body acceleration signal on the Y axis.
+###fBodyAccMeanZ
+- Domain: frequency
+- Mean of the body acceleration signal on the Z axis.
+###fBodyAccStdX
+- Domain: frequency
+- Standard deviation of the body acceleration signal on the X axis.
+###fBodyAccStdY
+- Domain: frequency
+- Standard deviation of the body acceleration signal on the Y axis.
+###fBodyAccStdZ
+- Domain: frequency
+- Standard deviation of the body acceleration signal on the Z axis.
+###fBodyAccMeanFreqX
+- Domain: frequency
+- Weighted average (mean frequency) of the body acceleration signal on the X axis.
+###fBodyAccMeanFreqY
+- Domain: frequency
+- Weighted average (mean frequency) of the body acceleration signal on the Y axis.
+###fBodyAccMeanFreqZ
+- Domain: frequency
+- Weighted average (mean frequency) of the body acceleration signal on the Z axis.
+###fBodyAccJerkMeanX
+- Domain: frequency
+- Mean of the Jerk signal of the body acceleration signal on the X axis.
+###fBodyAccJerkMeanY
+- Domain: frequency
+- Mean of the Jerk signal of the body acceleration signal on the Y axis.
+###fBodyAccJerkMeanZ
+- Domain: frequency
+- Mean of the Jerk signal of the body acceleration signal on the Z axis.
+###fBodyAccJerkStdX
+- Domain: frequency
+- Standard deviation of the Jerk signal of the body acceleration signal on the X axis.
+###fBodyAccJerkStdY
+- Domain: frequency
+- Standard deviation of the Jerk signal of the body acceleration signal on the Y axis.
+###fBodyAccJerkStdZ
+- Domain: frequency
+- Standard deviation of the Jerk signal of the body acceleration signal on the Z axis.
+###fBodyAccJerkMeanFreqX
+- Domain: frequency
+- Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the X axis.
+###fBodyAccJerkMeanFreqY
+- Domain: frequency
+- Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the Y axis.
+###fBodyAccJerkMeanFreqZ
+- Domain: frequency
+- Weighted average (mean frequency) of the Jerk signal of the body acceleration signal on the Z axis.
+###fBodyGyroMeanX
+- Domain: frequency
+- Mean of the body's gyroscope on the X axis.
+###fBodyGyroMeanY
+- Domain: frequency
+- Mean of the body's gyroscope on the Y axis.
+###fBodyGyroMeanZ
+- Domain: frequency
+- Mean of the body's gyroscope on the Z axis.
+###fBodyGyroStdX
+- Domain: frequency
+- Standard deviation of the body's gyroscope on the X axis.
+###fBodyGyroStdY
+- Domain: frequency
+- Standard deviation of the body's gyroscope on the Y axis.
+###fBodyGyroStdZ
+- Domain: frequency
+- Standard deviation of the body's gyroscope on the Z axis.
+###fBodyGyroMeanFreqX
+- Domain: frequency
+- Weighted average (mean frequency) of the body's gyroscope on the X axis.
+###fBodyGyroMeanFreqY
+- Domain: frequency
+- Weighted average (mean frequency) of the body's gyroscope on the Y axis.
+###fBodyGyroMeanFreqZ
+- Domain: frequency
+- Weighted average (mean frequency) of the body's gyroscope on the Z axis.
+###fBodyAccMagMean
+- Domain: frequency
+- Mean of the magnitude of the body acceleration signal.
+###fBodyAccMagStd
+- Domain: frequency
+- Standard deviation of the magnitude of the body acceleration signal.
+###fBodyAccMagMeanFreq
+- Domain: frequency
+- Weighted average (mean frequency) of the magnitude of the body acceleration signal.
+###fBodyAccJerkMagMean
+- Domain: frequency
+- Mean of the magnitude of the Jerk signal of the body acceleration signal.
+###fBodyAccJerkMagStd
+- Domain: frequency
+- Standard deviation of the magnitude of the Jerk signal of the body acceleration signal.
+###fBodyAccJerkMagMeanFreq
+- Domain: frequency
+- Weighted average (mean frequency) of the magnitude of the Jerk signal of the body acceleration signal.
+###fBodyGyroMagMean
+- Domain: frequency
+- Mean of the magnitude of the body's gyroscope.
+###fBodyGyroMagStd
+- Domain: frequency
+- Standard deviation of the magnitude of the body's gyroscope.
+###fBodyGyroMagMeanFreq
+- Domain: frequency
+- Weighted average (mean frequency) of the magnitude of the body's gyroscope.
+###fBodyGyroJerkMagMean
+- Domain: frequency
+- Mean of the magnitude of the Jerk signal of the body's gyroscope.
+###fBodyGyroJerkMagStd
+- Domain: frequency
+- Standard deviation of the magnitude of the Jerk signal of the body's gyroscope.
+###fBodyGyroJerkMagMeanFreq
+- Domain: frequency
+- Weighted average (mean frequency) of the magnitude of the Jerk signal of the body's gyroscope.
+###tBodyAccMeanGravityAngle
+- Domain: time
+- Mean of the angle between body acceleration and gravity acceleration.
+###tBodyAccJerkGravityMeanAngle
+- Domain: time
+- Mean of the angle between the Jerk of the body acceleration and gravity acceleration.
+###tBodyGyroGravityMeanAngle
+- Domain: time
+- Mean of the angle between body's gyroscope and gravity acceleration.
+###tBodyGyroJerkGravityMeanAngle
+- Domain: time
+- Mean of the angle between the Jerk of the body's gyroscope and gravity acceleration.
+###gravityMeanAngleX
+- Mean of the angle of gravity on the X axis.
+###gravityMeanAngleY
+- Mean of the angle of gravity on the Y axis.
+###gravityMeanAngleZ
+- Mean of the angle of gravity on the Z axis.
 
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
-##Sources
-Sources you used if any, otherise leave out.
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
