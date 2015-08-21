@@ -1,6 +1,5 @@
----
-title: "Codebook for Human Activity Recognition Using Smartphones Dataset"
----
+#Codebook for Human Activity Recognition Using Smartphones Dataset
+
 
 ## Project Description
 Cleaning the data of the Human Activity Recognition database 
@@ -38,7 +37,7 @@ For a more detailed description on each of the operationsm pleas read the [READM
 ##Description of the variables in the tiny_data.txt file
  - Dimensions of the dataset: 180 observations of 88 variables
  - Variables present in the dataset
----
+
                                      vars   n  mean   sd median trimmed   mad   min   max range  skew kurtosis   se
 X.Subject.                              1 180 15.50 8.68  15.50   15.50 11.12  1.00 30.00 29.00  0.00    -1.22 0.65
 X.Activity.*                            2 180   NaN   NA     NA     NaN    NA   Inf  -Inf  -Inf    NA       NA   NA
@@ -128,7 +127,8 @@ X.tBodyGyroJerkMeanGravityMeanAngle.   85 180 -0.01 0.07  -0.02   -0.01  0.07 -0
 X.gravityMeanAngleX.                   86 180 -0.52 0.48  -0.74   -0.62  0.14 -0.95  0.74  1.68  1.64     1.00 0.04
 X.gravityMeanAngleY.                   87 180  0.08 0.28   0.17    0.13  0.12 -0.87  0.42  1.30 -1.70     2.07 0.02
 X.gravityMeanAngleZ.                   88 180 -0.04 0.23   0.01   -0.01  0.14 -0.87  0.39  1.26 -1.46     2.19 0.02
----
+
+
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
 ###Variable 1 (repeat this section for all variables in the dataset)
